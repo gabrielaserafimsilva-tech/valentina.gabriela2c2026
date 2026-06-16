@@ -1,38 +1,39 @@
-/* CONFIGURAÇÕES GERAIS */
+/* CONFIGURAÇÕES GERAIS - CORES NUTRITIVAS E VIBRANTES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f4f9f4;
-    color: #333;
+    background-color: #fffbf2; /* Fundo creme bem quentinho */
+    color: #2b2d42;
 }
 
-/* MENU DE NAVEGAÇÃO VIBRANTE */
+/* MENU DE NAVEGAÇÃO DESTAQUE */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1b4332; /* Verde floresta escuro */
-    padding: 20px 50px;
+    background-color: #ff007f; /* Rosa choque neon ultra colorido */
+    padding: 15px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.3);
 }
 
 .logo {
     color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 26px;
+    font-weight: 900;
+    text-shadow: 2px 2px #3a0ca3;
 }
 
 .logo span {
-    color: #52b788; /* Verde claro vibrante */
+    color: #ccff00; /* Verde limão neon */
 }
 
 .navbar ul {
@@ -41,26 +42,30 @@ body {
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .navbar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 .navbar ul li a:hover {
-    color: #d8f3dc;
+    background-color: #ccff00;
+    color: #ff007f;
 }
 
-/* PÁGINA 1: HOME (BANNER GRANDE) */
+/* PÁGINA 1: HOME */
 .section-home {
-    height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200') no-repeat center center/cover;
+    height: 92vh;
+    background: linear-gradient(135px, rgba(58, 12, 163, 0.6), rgba(247, 37, 133, 0.4)), 
+                url('https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?w=1200') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,76 +74,83 @@ body {
 }
 
 .home-content h1 {
-    font-size: 50px;
+    font-size: 55px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    color: #ccff00;
 }
 
 .home-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 600px;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    font-size: 22px;
+    margin-bottom: 35px;
+    max-width: 700px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .btn-explore {
-    background-color: #ff7043; /* Laranja bem vivo */
-    color: white;
-    padding: 12px 30px;
+    background-color: #4cc9f0; /* Azul Piscina */
+    color: #fff;
+    padding: 15px 40px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(76, 201, 240, 0.4);
     transition: transform 0.2s, background-color 0.2s;
 }
 
 .btn-explore:hover {
-    background-color: #f4511e;
-    transform: scale(1.05);
+    background-color: #f72585;
+    transform: scale(1.1);
 }
 
-/* PÁGINA 2: ESPÉCIES (GRID BEM COLORIDO) */
+/* PÁGINA 2: ESPÉCIES (GRID MEGA COLORIDO) */
 .section-especies {
-    padding: 80px 40px;
+    padding: 80px 20px;
     text-align: center;
     background-color: #ffffff;
 }
 
 .section-especies h2 {
-    font-size: 36px;
-    color: #1b4332;
+    font-size: 40px;
+    color: #3a0ca3;
     margin-bottom: 10px;
 }
 
 .subtitle {
     font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
+    color: #7209b7;
+    margin-bottom: 50px;
+    font-weight: 600;
 }
 
 .grid-especies {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .card {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
-    width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    width: 280px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    border-bottom: 8px solid;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
 }
 
 .card img {
     width: 100%;
-    height: 250px;
+    height: 240px;
     object-fit: cover;
 }
 
@@ -146,88 +158,137 @@ body {
     padding: 20px;
     color: white;
     text-align: left;
+    height: 160px;
 }
 
-/* Cores vibrantes dos Cards */
-.bg-orange { background-color: #ff9f1c; }
-.bg-yellow { background-color: #4361ee; }
-.bg-green { background-color: #2ec4b6; }
+/* Bordas e Fundos Vibrantes Combinados */
+.border-orange { border-color: #ff7043; }
+.bg-orange { background-color: #ff7043; }
 
-.card-info h3 { margin-bottom: 10px; }
+.border-yellow { border-color: #ffb703; }
+.bg-yellow { background-color: #ffb703; color: #222; }
 
-/* PÁGINA 3: CURIOSIDADES (BLOCOS COLORIDOS) */
+.border-green { border-color: #06d6a0; }
+.bg-green { background-color: #06d6a0; }
+
+.border-purple { border-color: #7209b7; }
+.bg-purple { background-color: #7209b7; }
+
+.card-info h3 { margin-bottom: 8px; font-size: 20px; }
+.card-info p { font-size: 14px; line-height: 1.4; }
+
+/* PÁGINA 3: CURIOSIDADES (BLOCOS VISUAIS COM IMAGENS) */
 .section-curiosidades {
-    padding: 80px 40px;
-    background-color: #f4f9f4;
+    padding: 80px 20px;
+    background-color: #3a0ca3; /* Fundo Roxo Escuro Ultra Intenso */
     text-align: center;
 }
 
 .section-curiosidades h2 {
-    font-size: 36px;
-    color: #1b4332;
-    margin-bottom: 40px;
+    font-size: 40px;
+    color: #ccff00;
+    margin-bottom: 50px;
 }
 
 .curiosidades-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-.fato-box {
-    padding: 30px;
-    border-radius: 10px;
-    width: 280px;
-    color: white;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+.fato-card {
+    width: 320px;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.color-1 { background-color: #e63946; } /* Vermelho vivo */
-.color-2 { background-color: #8338ec; } /* Roxo vibrante */
-.color-3 { background-color: #ff006e; } /* Rosa choque */
+/* Fotos de fundo nas Curiosidades */
+.card-fato-1 { background: url('https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=400') no-repeat center/cover; }
+.card-fato-2 { background: url('https://images.unsplash.com/photo-1601370834636-d419d26d858c?w=400') no-repeat center/cover; }
+.card-fato-3 { background: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400') no-repeat center/cover; }
 
-.fato-box h3 { margin-bottom: 15px; }
-
-/* PÁGINA 4: CONSERVAÇÃO */
-.section-conservacao {
-    padding: 80px 40px;
-    background-color: #1b4332;
+.fato-overlay {
+    background: rgba(247, 37, 133, 0.85); /* Película Rosa Neon */
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
     color: white;
+    transition: background 0.3s;
+}
+
+.fato-card:nth-child(2) .fato-overlay { background: rgba(76, 201, 240, 0.85); color: #111; } /* Película Azul */
+.fato-card:nth-child(3) .fato-overlay { background: rgba(255, 183, 3, 0.85); color: #111; }  /* Película Amarela */
+
+.fato-overlay h3 { margin-bottom: 10px; font-size: 22px; }
+
+/* PÁGINA 4: CONSERVAÇÃO (VIBRANTE E IMPACTANTE) */
+.section-conservacao {
+    padding: 80px 20px;
+    background-color: #06d6a0; /* Fundo Verde Menta Vibrante */
+    color: #111;
     text-align: center;
 }
 
 .conservacao-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .section-conservacao h2 {
-    font-size: 36px;
+    font-size: 40px;
+    color: #3a0ca3;
     margin-bottom: 20px;
-    color: #52b788;
 }
 
-.img-conservacao {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    margin: 30px 0;
-    border: 5px solid #52b788;
+.conservacao-banner {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.FacaSuaParte {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff9f1c;
+.conservacao-banner img {
+    width: 50%;
+    min-width: 300px;
+    height: 350px;
+    object-fit: cover;
 }
 
-/* RODAPÉ */
+.banner-texto {
+    padding: 40px;
+    flex: 1;
+    text-align: left;
+}
+
+.banner-texto h3 {
+    color: #ff007f;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4e69;
+}
+
+/* RODAPÉ EXTRA COLORIDO */
 footer {
-    background-color: #112a1f;
-    color: #999;
+    background-color: #111;
+    color: #ff007f;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: bold;
 }
