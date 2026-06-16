@@ -1,39 +1,40 @@
-/* CONFIGURAÇÕES GERAIS - CORES NUTRITIVAS E VIBRANTES */
+/* RESET E CONFIGURAÇÕES DE TIPOGRAFIA PREMIUM */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fffbf2; /* Fundo creme bem quentinho */
-    color: #2b2d42;
+    background-color: #ffffff;
+    color: #2c2c2c; /* Cinza escuro para melhor legibilidade */
+    line-height: 1.6;
 }
 
-/* MENU DE NAVEGAÇÃO DESTAQUE */
+/* NAVBAR DESIGN CLEAN */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff007f; /* Rosa choque neon ultra colorido */
-    padding: 15px 40px;
+    background-color: #ffffff;
+    padding: 25px 60px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.3);
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .logo {
-    color: #fff;
-    font-size: 26px;
-    font-weight: 900;
-    text-shadow: 2px 2px #3a0ca3;
+    color: #1a1a1a;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .logo span {
-    color: #ccff00; /* Verde limão neon */
+    color: #ffb7c5; /* Rosa Bebê */
 }
 
 .navbar ul {
@@ -42,253 +43,247 @@ body {
 }
 
 .navbar ul li {
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: #666666;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    padding: 8px 12px;
-    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    background-color: #ccff00;
-    color: #ff007f;
+    color: #ffb7c5; /* Destaque sutil no hover */
 }
 
-/* PÁGINA 1: HOME */
+/* PÁGINA 1: HOME (IMAGEM COM TOM SÓBRIO) */
 .section-home {
-    height: 92vh;
-    background: linear-gradient(135px, rgba(58, 12, 163, 0.6), rgba(247, 37, 133, 0.4)), 
+    height: 85vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
                 url('https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?w=1200') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    padding: 0 20px;
 }
 
 .home-content h1 {
-    font-size: 55px;
+    font-size: 48px;
+    color: #1a1a1a;
+    font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
-    color: #ccff00;
+    letter-spacing: -1px;
 }
 
 .home-content p {
-    font-size: 22px;
-    margin-bottom: 35px;
-    max-width: 700px;
-    font-weight: 500;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 40px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-explore {
-    background-color: #4cc9f0; /* Azul Piscina */
-    color: #fff;
-    padding: 15px 40px;
+    background-color: #ffb7c5; /* Fundo Rosa Bebê */
+    color: #ffffff;
+    padding: 14px 35px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(76, 201, 240, 0.4);
-    transition: transform 0.2s, background-color 0.2s;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-explore:hover {
-    background-color: #f72585;
-    transform: scale(1.1);
+    background-color: #ffa4b5;
+    transform: translateY(-2px);
 }
 
-/* PÁGINA 2: ESPÉCIES (GRID MEGA COLORIDO) */
+/* PÁGINA 2: ESPÉCIES (ESTILO EDITORIAL) */
 .section-especies {
-    padding: 80px 20px;
-    text-align: center;
+    padding: 100px 60px;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .section-especies h2 {
-    font-size: 40px;
-    color: #3a0ca3;
-    margin-bottom: 10px;
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .subtitle {
-    font-size: 18px;
-    color: #7209b7;
-    margin-bottom: 50px;
-    font-weight: 600;
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 60px;
 }
 
 .grid-especies {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
+    background-color: #ffffff;
+    width: 320px;
+    text-align: left;
+    border: 1px solid #eef0f2;
+    border-radius: 8px;
     overflow: hidden;
-    width: 280px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-    border-bottom: 8px solid;
+    transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .card img {
     width: 100%;
-    height: 240px;
+    height: 220px;
     object-fit: cover;
+    filter: grayscale(20%); /* Deixa as imagens levemente mais sóbrias */
 }
 
 .card-info {
-    padding: 20px;
-    color: white;
-    text-align: left;
-    height: 160px;
+    padding: 25px;
 }
 
-/* Bordas e Fundos Vibrantes Combinados */
-.border-orange { border-color: #ff7043; }
-.bg-orange { background-color: #ff7043; }
+.card-info h3 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
 
-.border-yellow { border-color: #ffb703; }
-.bg-yellow { background-color: #ffb703; color: #222; }
+.card-info p {
+    font-size: 14px;
+    color: #666666;
+}
 
-.border-green { border-color: #06d6a0; }
-.bg-green { background-color: #06d6a0; }
-
-.border-purple { border-color: #7209b7; }
-.bg-purple { background-color: #7209b7; }
-
-.card-info h3 { margin-bottom: 8px; font-size: 20px; }
-.card-info p { font-size: 14px; line-height: 1.4; }
-
-/* PÁGINA 3: CURIOSIDADES (BLOCOS VISUAIS COM IMAGENS) */
+/* PÁGINA 3: CURIOSIDADES (MINIMALISTA COM DETALHES EM ROSA) */
 .section-curiosidades {
-    padding: 80px 20px;
-    background-color: #3a0ca3; /* Fundo Roxo Escuro Ultra Intenso */
+    padding: 100px 60px;
+    background-color: #fffafb; /* Fundo off-white puxado levemente para o rosa */
     text-align: center;
 }
 
 .section-curiosidades h2 {
-    font-size: 40px;
-    color: #ccff00;
-    margin-bottom: 50px;
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 60px;
 }
 
 .curiosidades-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.fato-card {
+.fato-box {
+    background-color: #ffffff;
+    padding: 40px 30px;
     width: 320px;
-    height: 220px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* Fotos de fundo nas Curiosidades */
-.card-fato-1 { background: url('https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=400') no-repeat center/cover; }
-.card-fato-2 { background: url('https://images.unsplash.com/photo-1601370834636-d419d26d858c?w=400') no-repeat center/cover; }
-.card-fato-3 { background: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400') no-repeat center/cover; }
-
-.fato-overlay {
-    background: rgba(247, 37, 133, 0.85); /* Película Rosa Neon */
-    width: 100%;
-    height: 100%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: left;
-    color: white;
-    transition: background 0.3s;
+    border-radius: 6px;
+    border-top: 4px solid #ffb7c5; /* Linha sutil em rosa bebê */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 
-.fato-card:nth-child(2) .fato-overlay { background: rgba(76, 201, 240, 0.85); color: #111; } /* Película Azul */
-.fato-card:nth-child(3) .fato-overlay { background: rgba(255, 183, 3, 0.85); color: #111; }  /* Película Amarela */
+.numero {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffb7c5;
+    display: block;
+    margin-bottom: 10px;
+}
 
-.fato-overlay h3 { margin-bottom: 10px; font-size: 22px; }
+.fato-box h3 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
 
-/* PÁGINA 4: CONSERVAÇÃO (VIBRANTE E IMPACTANTE) */
+.fato-box p {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* PÁGINA 4: CONSERVAÇÃO */
 .section-conservacao {
-    padding: 80px 20px;
-    background-color: #06d6a0; /* Fundo Verde Menta Vibrante */
-    color: #111;
-    text-align: center;
+    padding: 100px 60px;
+    background-color: #ffffff;
 }
 
 .conservacao-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .section-conservacao h2 {
-    font-size: 40px;
-    color: #3a0ca3;
+    font-size: 32px;
+    color: #1a1a1a;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.conservacao-banner {
+.introducao-conservacao {
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+.conservacao-flex {
     display: flex;
-    background-color: white;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 40px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     align-items: center;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
-.conservacao-banner img {
-    width: 50%;
+.conservacao-flex img {
+    width: 45%;
     min-width: 300px;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 6px;
 }
 
-.banner-texto {
-    padding: 40px;
+.conservacao-texto {
     flex: 1;
-    text-align: left;
+    min-width: 300px;
 }
 
-.banner-texto h3 {
-    color: #ff007f;
-    font-size: 26px;
+.conservacao-texto h3 {
+    font-size: 22px;
+    color: #1a1a1a;
     margin-bottom: 15px;
 }
 
-.banner-texto p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #4a4e69;
+.conservacao-texto p {
+    font-size: 15px;
+    color: #666666;
 }
 
-/* RODAPÉ EXTRA COLORIDO */
+/* RODAPÉ DISCRETO */
 footer {
-    background-color: #111;
-    color: #ff007f;
+    background-color: #ffffff;
+    color: #999999;
     text-align: center;
-    padding: 25px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 40px 20px;
+    font-size: 13px;
+    border-top: 1px solid #f0f0f0;
+}
 }
