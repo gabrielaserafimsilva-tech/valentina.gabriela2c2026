@@ -1,233 +1,116 @@
-/* CONFIGURAÇÕES GERAIS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
-}
+/* CONFIGURAÇÕES GERAIS E ATUALIZAÇÕES DOS ELEMENTOS NOVOS */
 
-body {
-    background-color: #f4f9f4;
-    color: #333;
-}
-
-/* MENU DE NAVEGAÇÃO VIBRANTE */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1b4332; /* Verde floresta escuro */
-    padding: 20px 50px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.logo span {
-    color: #52b788; /* Verde claro vibrante */
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #d8f3dc;
-}
-
-/* PÁGINA 1: HOME (BANNER GRANDE) */
-.section-home {
-    height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('https://i.pinimg.com/736x/00/3b/47/003b4724a3ac07ce3de09dcfce4a27c3.jpg') no-repeat center center/cover;
+/* ABAS DE ESPÉCIES */
+.tab-menu {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.home-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-}
-
-.home-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 600px;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-}
-
-.btn-explore {
-    background-color: #ff7043; /* Laranja bem vivo */
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.btn-explore:hover {
-    background-color: #f4511e;
-    transform: scale(1.05);
-}
-
-/* PÁGINA 2: ESPÉCIES (GRID BEM COLORIDO) */
-.section-especies {
-    padding: 80px 40px;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-.section-especies h2 {
-    font-size: 36px;
-    color: #1b4332;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 18px;
-    color: #666;
+    gap: 15px;
     margin-bottom: 40px;
 }
-
-.grid-especies {
+.tab-btn {
+    background-color: #ffffff;
+    border: 1px solid #ffb7c5;
+    color: #2c2c2c;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.tab-btn:hover, .tab-btn.active {
+    background-color: #ffb7c5;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 183, 197, 0.4);
+}
+.tab-content {
+    display: none;
+    animation: fadeEffect 0.6s;
+}
+.tab-content.active {
+    display: block;
+}
+@keyframes fadeEffect {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.aba-flex {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.02);
 }
-
-.card {
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
+.aba-flex img {
+    width: 350px;
     height: 250px;
     object-fit: cover;
+    border-radius: 8px;
 }
+.aba-texto { text-align: left; }
+.aba-texto h3 { margin-bottom: 15px; color: #1a1a1a; }
 
-.card-info {
-    padding: 20px;
-    color: white;
-    text-align: left;
+/* FLIP CARDS (EFEITO 3D NAS CURIOSIDADES) */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 230px;
+    perspective: 1000px;
 }
-
-/* Cores vibrantes dos Cards */
-.bg-orange { background-color: #ff9f1c; }
-.bg-yellow { background-color: #4361ee; }
-.bg-green { background-color: #2ec4b6; }
-
-.card-info h3 { margin-bottom: 10px; }
-
-/* PÁGINA 3: CURIOSIDADES (BLOCOS COLORIDOS) */
-.section-curiosidades {
-    padding: 80px 40px;
-    background-color: #f4f9f4;
-    text-align: center;
-}
-
-.section-curiosidades h2 {
-    font-size: 36px;
-    color: #1b4332;
-    margin-bottom: 40px;
-}
-
-.curiosidades-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.fato-box {
-    padding: 30px;
-    border-radius: 10px;
-    width: 280px;
-    color: white;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.color-1 { background-color: #e63946; } /* Vermelho vivo */
-.color-2 { background-color: #8338ec; } /* Roxo vibrante */
-.color-3 { background-color: #ff006e; } /* Rosa choque */
-
-.fato-box h3 { margin-bottom: 15px; }
-
-/* PÁGINA 4: CONSERVAÇÃO */
-.section-conservacao {
-    padding: 80px 40px;
-    background-color: #1b4332;
-    color: white;
-    text-align: center;
-}
-
-.conservacao-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.section-conservacao h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #52b788;
-}
-
-.img-conservacao {
+.flip-card-inner {
+    position: relative;
     width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    margin: 30px 0;
-    border: 5px solid #52b788;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    padding: 30px 25px;
+}
+.flip-card-front {
+    background-color: #ffffff;
+    border-top: 4px solid #ffb7c5;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+.flip-card-back {
+    background-color: #ffb7c5;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flip-card-back h3 { color: #ffffff !important; margin-bottom: 10px; }
+.DicaClique { font-size: 12px; color: #ffb7c5; margin-top: 30px; font-weight: bold; }
 
-.FacaSuaParte {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff9f1c;
-}
+/* SEÇÃO MITOS VS FATOS */
+.section-mitos { padding: 100px 60px; background-color: #ffffff; text-align: center; }
+.mitos-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; }
+.mitos-card { background: #fffafb; border: 1px solid #f0f0f0; width: 450px; padding: 40px; border-radius: 8px; text-align: left; position: relative;}
+.tag { position: absolute; top: 15px; right: 20px; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+.tag.mito { background: #ffe3e8; color: #c9184a; }
+.tag.fato { background: #e8fff1; color: #004b23; }
+.mitos-card h3 { margin-bottom: 15px; font-size: 18px; color: #1a1a1a; line-height: 1.4; }
 
-/* RODAPÉ */
-footer {
-    background-color: #112a1f;
-    color: #999;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
+/* SEÇÃO DO JOGO QUIZ */
+.section-quiz { padding: 100px 60px; background-color: #fffafb; text-align: center; }
+.quiz-box { max-width: 700px; margin: 40px auto 0 auto; background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); border: 1px solid #eee; }
+.quiz-box h3 { font-size: 20px; margin-bottom: 25px; color: #1a1a1a; }
+.quiz-opcoes { display: flex; flex-direction: column; gap: 12px; }
+.quiz-btn { background: #ffffff; border: 1px solid #ffb7c5; padding: 14px; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; }
+.quiz-btn:hover { background: #fff5f7; }
+#quiz-resultado { margin-top: 20px; font-size: 15px; min-height: 24px; }
