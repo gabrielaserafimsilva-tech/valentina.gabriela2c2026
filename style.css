@@ -1,0 +1,233 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+/* MENU DE NAVEGAÇÃO VIBRANTE */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b4332; /* Verde floresta escuro */
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #52b788; /* Verde claro vibrante */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #d8f3dc;
+}
+
+/* PÁGINA 1: HOME (BANNER GRANDE) */
+.section-home {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.btn-explore {
+    background-color: #ff7043; /* Laranja bem vivo */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-explore:hover {
+    background-color: #f4511e;
+    transform: scale(1.05);
+}
+
+/* PÁGINA 2: ESPÉCIES (GRID BEM COLORIDO) */
+.section-especies {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.section-especies h2 {
+    font-size: 36px;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.grid-especies {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+/* Cores vibrantes dos Cards */
+.bg-orange { background-color: #ff9f1c; }
+.bg-yellow { background-color: #4361ee; }
+.bg-green { background-color: #2ec4b6; }
+
+.card-info h3 { margin-bottom: 10px; }
+
+/* PÁGINA 3: CURIOSIDADES (BLOCOS COLORIDOS) */
+.section-curiosidades {
+    padding: 80px 40px;
+    background-color: #f4f9f4;
+    text-align: center;
+}
+
+.section-curiosidades h2 {
+    font-size: 36px;
+    color: #1b4332;
+    margin-bottom: 40px;
+}
+
+.curiosidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fato-box {
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.color-1 { background-color: #e63946; } /* Vermelho vivo */
+.color-2 { background-color: #8338ec; } /* Roxo vibrante */
+.color-3 { background-color: #ff006e; } /* Rosa choque */
+
+.fato-box h3 { margin-bottom: 15px; }
+
+/* PÁGINA 4: CONSERVAÇÃO */
+.section-conservacao {
+    padding: 80px 40px;
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+}
+
+.conservacao-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-conservacao h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #52b788;
+}
+
+.img-conservacao {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border: 5px solid #52b788;
+}
+
+.FacaSuaParte {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9f1c;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #112a1f;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
