@@ -60,7 +60,7 @@ body {
 .section-home {
     height: 90vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200') no-repeat center center/cover;
+                url('https://i.pinimg.com/736x/4f/3c/69/4f3c69e8f2a840ce3bb15bb8dfd2754a.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
