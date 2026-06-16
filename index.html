@@ -1,213 +1,183 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo dos Primatas 🐵</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mundo dos Primatas 🐵</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <header class="navbar">
-        <div class="logo">Primata<span>.</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#especies">Espécies</a></li>
-                <li><a href="#curiosidades">Curiosidades</a></li>
-                <li><a href="#mitos">Mitos vs Fatos</a></li>
-                <li><a href="#quiz">Desafio Quiz</a></li>
-                <li><a href="#conservacao">Conservação</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="section-home">
-        <div class="home-content">
-            <h1>A Ordem dos Primatas</h1>
-            <p>Uma análise sofisticada, interativa e visual sobre a evolução, biodiversidade e o comportamento dos nossos parentes biológicos mais próximos.</p>
-            <a href="#especies" class="btn-explore">Começar Jornada</a>
-        </div>
-    </section>
 
-    <section id="especies" class="section-especies">
-        <h2>Catálogo de Espécies</h2>
-        <p class="subtitle">Clique nas categorias abaixo para explorar a anatomia e comportamento de cada grupo.</p>
-        
-        <div class="tab-menu">
-            <button class="tab-btn active" onclick="abrirAba(event, 'simios')">Grandes Símios</button>
-            <button class="tab-btn" onclick="abrirAba(event, 'lemures')">Lêmures</button>
-            <button class="tab-btn" onclick="abrirAba(event, 'novo-mundo')">Novo Mundo</button>
-        </div>
+<header class="navbar">
 
-        <div id="simios" class="tab-content active">
-            <div class="aba-flex">
-                <img src="https://cobasiblog.blob.core.windows.net/production-ofc/2021/08/orangotango-1.jpg" alt="Orangotango">
-                <div class="aba-texto">
-                    <h3>Hominídeos e Grandes Símios</h3>
-                    <p>Chimpanzés, gorilas, orangotangos e bonobos compartilham uma ancestralidade muito próxima à humana. São caracterizados pela ausência de cauda, postura semi-ereta, desenvolvimento cognitivo avançado e a incrível capacidade de criar culturas locais e usar ferramentas no dia a dia.</p>
-                </div>
-            </div>
-        </div>
+<div class="logo">Primata<span>Blog</span></div>
 
-        <div id="lemures" class="tab-content">
-            <div class="aba-flex">
-                <img src="https://www.infoescola.com/wp-content/uploads/2019/07/lemure-690214438-667x1000.jpg" alt="Lêmure">
-                <div class="aba-texto">
-                    <h3>Estrepissirrinos (Lêmures)</h3>
-                    <p>Isolados na ilha de Madagascar por milhões de anos, os lêmures evoluíram em uma variedade impressionante de tamanhos e formas. Eles mantêm características dos primatas primitivos, como um olfato super apurado, focinhos mais alongados e uma forte adaptação para a vida puramente noturna e arbórea.</p>
-                </div>
-            </div>
-        </div>
+<nav>
 
-        <div id="novo-mundo" class="tab-content">
-            <div class="aba-flex">
-                <img src="https://faunanews.com.br/wp-content/uploads/2024/10/Joao-Paulo-Krajewski.webp" alt="Mico Leão">
-                <div class="aba-texto">
-                    <h3>Platirrinos (Macacos do Novo Mundo)</h3>
-                    <p>Habitantes das Américas Central e do Sul, este grupo inclui os saguis, micos-leões e macacos-prego. A principal característica que os diferencia é a presença da cauda preênsil — que funciona praticamente como uma quinta mão para se segurar firmemente nos galhos das florestas tropicais.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<ul>
 
-    <section id="curiosidades" class="section-curiosidades">
-        <h2>Aspectos Comportamentais</h2>
-        <p class="subtitle">Passe o mouse ou toque nos cards para descobrir os segredos revelados!</p>
-        
-        <div class="curiosidades-container">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="numero">01</span>
-                        <h3>Cultura Material</h3>
-                        <p class="DicaClique">Passe o mouse para ler ➔</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Uso de Ferramentas</h3>
-                        <p>Eles selecionam pedras com o peso perfeito para quebrar sementes duras e usam folhas secas como esponjas para coletar água da chuva!</p>
-                    </div>
-                </div>
-            </div>
+<li><a href="#home">Início</a></li>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="numero">02</span>
-                        <h3>Linguística</h3>
-                        <p class="DicaClique">Passe o mouse para ler ➔</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Sistemas de Alarme</h3>
-                        <p>Eles não dão apenas gritos de susto. Seus sons possuem "palavras" diferentes para avisar se o predador é uma cobra no chão ou uma águia no céu.</p>
-                    </div>
-                </div>
-            </div>
+<li><a href="#especies">Espécies</a></li>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="numero">03</span>
-                        <h3>Sociabilidade</h3>
-                        <p class="DicaClique">Passe o mouse para ler ➔</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Musculatura Mimética</h3>
-                        <p>A expressão facial deles é extremamente rica. O ato de "limpar o pelo" do outro serve para acalmar os ânimos, pedir desculpas e fechar alianças políticas no bando.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<li><a href="#curiosidades">Curiosidades</a></li>
 
-    <section id="mitos" class="section-mitos">
-        <h2>Mitos vs Fatos</h2>
-        <div class="mitos-container">
-            <div class="mitos-card">
-                <div class="tag mito">Mito</div>
-                <h3>"Macacos podem ser criados como pets domésticos sem problemas."</h3>
-                <p><strong>Fato Real:</strong> Primatas são animais estritamente silvestres. Eles exigem convívio social com sua própria espécie e, ao crescerem, desenvolvem comportamentos territoriais e agressivos naturais, sofrendo muito em cativeiro doméstico.</p>
-            </div>
-            <div class="mitos-card">
-                <div class="tag fato">Fato</div>
-                <h3>"Os humanos não evoluíram dos macacos atuais."</h3>
-                <p><strong>Fato Real:</strong> Nós não viemos dos chimpanzés de hoje. Cientificamente falando, os humanos e os chimpanzés atuais compartilham um <strong>ancestral comum</strong> que viveu há cerca de 7 milhões de anos.</p>
-            </div>
-        </div>
-    </section>
+<li><a href="#conservacao">Conservação</a></li>
 
-    <section id="quiz" class="section-quiz">
-        <h2>Desafio Científico</h2>
-        <p class="subtitle">Teste seus conhecimentos rápidos sobre os primatas!</p>
-        <div class="quiz-box">
-            <h3>Qual destes primatas possui uma cauda preênsil capaz de segurar galhos?</h3>
-            <div class="quiz-opcoes">
-                <button class="quiz-btn" onclick="verificarResposta(this, false)">Gorila</button>
-                <button class="quiz-btn" onclick="verificarResposta(this, true)">Macaco-Prego ✨</button>
-                <button class="quiz-btn" onclick="verificarResposta(this, false)">Chimpanzé</button>
-            </div>
-            <p id="quiz-resultado"></p>
-        </div>
-    </section>
+</ul>
 
-    <section id="conservacao" class="section-conservacao">
-        <div class="conservacao-container">
-            <h2>Status de Conservação</h2>
-            <p class="introducao-conservacao">Atualmente, mais de 60% das espécies de primatas correm risco de extinção devido à fragmentação de habitats florestais e interferências humanas.</p>
-            
-            <div class="conservacao-flex">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgISlLTkgV2l5YMEhHwtrgJNqAU-iQQwg-WanYAPXA4Lh7Apf7ZK440jm&s=10" alt="Preservação">
-                <div class="conservacao-texto">
-                    <h3>Garantindo o Amanhã</h3>
-                    <p>Apoiar projetos de reflorestamento, evitar o turismo que explora animais e divulgar dados científicos legítimos são as ferramentas mais poderosas que temos para proteger a biodiversidade global.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+</nav>
 
-    <footer>
-        <p>&copy; 2026 Arquivo Primata. Desenvolvido com dedicação por Valentina e Gabriela Serafim.</p>
-    </footer>
+</header>
 
-    <script>
-        // Função para controlar o sistema de Abas das espécies
-        function abrirAba(evt, nomeAba) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove("active");
-            }
-            tablinks = document.getElementsByClassName("tab-btn");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-            document.getElementById(nomeAba).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
 
-        // Função para checar a resposta do Quiz
-        function verificarResposta(botao, eCorreto) {
-            // Reseta estilos dos botões do quiz
-            const botoes = botao.parentElement.getElementsByClassName("quiz-btn");
-            for (let b of botoes) {
-                b.style.backgroundColor = "#ffffff";
-                b.style.color = "#2c2c2c";
-            }
 
-            const resultado = document.getElementById("quiz-resultado");
-            if(eCorreto) {
-                botao.style.backgroundColor = "#a7ffd0"; // Verde suave para acerto
-                botao.style.color = "#004b23";
-                resultado.innerHTML = "<strong>Correto!</strong> Os macacos do Novo Mundo usam a cauda como um membro extra.";
-                resultado.style.color = "#004b23";
-            } else {
-                botao.style.backgroundColor = "#ffccd5"; // Rosa suave para erro
-                botao.style.color = "#c9184a";
-                resultado.innerHTML = "<strong>Incorreto.</strong> Lembre-se: os Grandes Símios não possuem caudas!";
-                resultado.style.color = "#c9184a";
-            }
-        }
-    </script>
+<section id="home" class="section-home">
+
+<div class="home-content">
+
+<h1>Explore o Mundo dos Primatas</h1>
+
+<p>De pequenos lêmures a grandes gorilas, descubra a vida dos nossos parentes mais próximos da natureza!</p>
+
+<a href="#especies" class="btn-explore">Começar Jornada</a>
+
+</div>
+
+</section>
+
+
+
+<section id="especies" class="section-especies">
+
+<h2>Galeria de Espécies</h2>
+
+<p class="subtitle">Conheça a incrível diversidade dessa ordem de mamíferos.</p>
+
+
+<div class="grid-especies">
+
+<div class="card">
+
+<img src="https://cobasiblog.blob.core.windows.net/production-ofc/2021/08/orangotango-1.jpg" alt="Macaco Chipanzé">
+
+<div class="card-info bg-orange">
+
+<h3>Grandes Símios</h3>
+
+<p>Chimpanzés, gorilas e orangotangos. Extremamente inteligentes e sociais.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://www.infoescola.com/wp-content/uploads/2019/07/lemure-690214438-667x1000.jpg" alt="Lêmure de cauda anelada">
+
+<div class="card-info bg-yellow">
+
+<h3>Lêmures</h3>
+
+<p>Nativos de Madagascar, possuem caudas longas e olhos expressivos.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://faunanews.com.br/wp-content/uploads/2024/10/Joao-Paulo-Krajewski.webp" alt="Macaco de pequeno porte">
+
+<div class="card-info bg-green">
+
+<h3>Macacos do Novo Mundo</h3>
+
+<p>Saguis, micos-leões e macacos-prego que habitam as Américas.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="curiosidades" class="section-curiosidades">
+
+<h2>Curiosidades Surpreendentes</h2>
+
+<div class="curiosidades-container">
+
+<div class="fato-box color-1">
+
+<h3>🛠️ Uso de Ferramentas</h3>
+
+<p>Alguns primatas usam pedras para quebrar nozes e gravetos para pescar formigas!</p>
+
+</div>
+
+<div class="fato-box color-2">
+
+<h3>🗣️ Comunicação Complexa</h3>
+
+<p>Eles usam uma enorme variedade de sons, expressões faciais e gestos para conversar.</p>
+
+</div>
+
+<div class="fato-box color-3">
+
+<h3>🧠 Super Cérebro</h3>
+
+<p>Eles têm cérebros grandes em relação ao corpo, o que garante uma excelente memória.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="conservacao" class="section-conservacao">
+
+<div class="conservacao-container">
+
+<h2>Proteger os Primatas</h2>
+
+<p>Muitas espécies correm risco de extinção devido à perda de habitat e à caça ilegal. O futuro deles depende das nossas ações hoje.</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgISlLTkgV2l5YMEhHwtrgJNqAU-iQQwg-WanYAPXA4Lh7Apf7ZK440jm&s=10" alt="Orangotango olhando para frente" class="img-conservacao">
+
+<p class="FacaSuaParte">Apoie ONGs, espalhe conhecimento e defenda o meio ambiente!</p>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>&copy; 2026 - Criado com 💚 por Valentina e Gabriela serafim</p>
+
+</footer>
+
+
 
 </body>
-</html>
+
+</html> 
+
