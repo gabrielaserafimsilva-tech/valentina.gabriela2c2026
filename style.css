@@ -1,40 +1,38 @@
-/* RESET E CONFIGURAÇÕES DE TIPOGRAFIA PREMIUM */
+/* CONFIGURAÇÕES GERAIS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #ffffff;
-    color: #2c2c2c; /* Cinza escuro para melhor legibilidade */
-    line-height: 1.6;
+    background-color: #f4f9f4;
+    color: #333;
 }
 
-/* NAVBAR DESIGN CLEAN */
+/* MENU DE NAVEGAÇÃO VIBRANTE */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    padding: 25px 60px;
+    background-color: #1b4332; /* Verde floresta escuro */
+    padding: 20px 50px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .logo {
-    color: #1a1a1a;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .logo span {
-    color: #ffb7c5; /* Rosa Bebê */
+    color: #52b788; /* Verde claro vibrante */
 }
 
 .navbar ul {
@@ -43,247 +41,193 @@ body {
 }
 
 .navbar ul li {
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
-    color: #666666;
+    color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #ffb7c5; /* Destaque sutil no hover */
+    color: #d8f3dc;
 }
 
-/* PÁGINA 1: HOME (IMAGEM COM TOM SÓBRIO) */
+/* PÁGINA 1: HOME (BANNER GRANDE) */
 .section-home {
-    height: 85vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
-                url('https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?w=1200') no-repeat center center/cover;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    color: white;
 }
 
 .home-content h1 {
-    font-size: 48px;
-    color: #1a1a1a;
-    font-weight: 700;
+    font-size: 50px;
     margin-bottom: 20px;
-    letter-spacing: -1px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .home-content p {
-    font-size: 18px;
-    color: #555555;
-    margin-bottom: 40px;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 .btn-explore {
-    background-color: #ffb7c5; /* Fundo Rosa Bebê */
-    color: #ffffff;
-    padding: 14px 35px;
+    background-color: #ff7043; /* Laranja bem vivo */
+    color: white;
+    padding: 12px 30px;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .btn-explore:hover {
-    background-color: #ffa4b5;
-    transform: translateY(-2px);
+    background-color: #f4511e;
+    transform: scale(1.05);
 }
 
-/* PÁGINA 2: ESPÉCIES (ESTILO EDITORIAL) */
+/* PÁGINA 2: ESPÉCIES (GRID BEM COLORIDO) */
 .section-especies {
-    padding: 100px 60px;
-    background-color: #ffffff;
+    padding: 80px 40px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .section-especies h2 {
-    font-size: 32px;
-    color: #1a1a1a;
-    margin-bottom: 15px;
-    position: relative;
+    font-size: 36px;
+    color: #1b4332;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    font-size: 16px;
-    color: #777777;
-    margin-bottom: 60px;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
 }
 
 .grid-especies {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .card {
-    background-color: #ffffff;
-    width: 320px;
-    text-align: left;
-    border: 1px solid #eef0f2;
-    border-radius: 8px;
+    background-color: white;
+    border-radius: 15px;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transform: translateY(-10px);
 }
 
 .card img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
-    filter: grayscale(20%); /* Deixa as imagens levemente mais sóbrias */
 }
 
 .card-info {
-    padding: 25px;
+    padding: 20px;
+    color: white;
+    text-align: left;
 }
 
-.card-info h3 {
-    font-size: 18px;
-    color: #1a1a1a;
-    margin-bottom: 12px;
-}
+/* Cores vibrantes dos Cards */
+.bg-orange { background-color: #ff9f1c; }
+.bg-yellow { background-color: #4361ee; }
+.bg-green { background-color: #2ec4b6; }
 
-.card-info p {
-    font-size: 14px;
-    color: #666666;
-}
+.card-info h3 { margin-bottom: 10px; }
 
-/* PÁGINA 3: CURIOSIDADES (MINIMALISTA COM DETALHES EM ROSA) */
+/* PÁGINA 3: CURIOSIDADES (BLOCOS COLORIDOS) */
 .section-curiosidades {
-    padding: 100px 60px;
-    background-color: #fffafb; /* Fundo off-white puxado levemente para o rosa */
+    padding: 80px 40px;
+    background-color: #f4f9f4;
     text-align: center;
 }
 
 .section-curiosidades h2 {
-    font-size: 32px;
-    color: #1a1a1a;
-    margin-bottom: 60px;
+    font-size: 36px;
+    color: #1b4332;
+    margin-bottom: 40px;
 }
 
 .curiosidades-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .fato-box {
-    background-color: #ffffff;
-    padding: 40px 30px;
-    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    color: white;
     text-align: left;
-    border-radius: 6px;
-    border-top: 4px solid #ffb7c5; /* Linha sutil em rosa bebê */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.numero {
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffb7c5;
-    display: block;
-    margin-bottom: 10px;
-}
+.color-1 { background-color: #e63946; } /* Vermelho vivo */
+.color-2 { background-color: #8338ec; } /* Roxo vibrante */
+.color-3 { background-color: #ff006e; } /* Rosa choque */
 
-.fato-box h3 {
-    font-size: 18px;
-    color: #1a1a1a;
-    margin-bottom: 15px;
-}
-
-.fato-box p {
-    font-size: 14px;
-    color: #555555;
-}
+.fato-box h3 { margin-bottom: 15px; }
 
 /* PÁGINA 4: CONSERVAÇÃO */
 .section-conservacao {
-    padding: 100px 60px;
-    background-color: #ffffff;
+    padding: 80px 40px;
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
 }
 
 .conservacao-container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .section-conservacao h2 {
-    font-size: 32px;
-    color: #1a1a1a;
-    text-align: center;
+    font-size: 36px;
     margin-bottom: 20px;
+    color: #52b788;
 }
 
-.introducao-conservacao {
-    text-align: center;
-    font-size: 16px;
-    color: #555555;
-    max-width: 700px;
-    margin: 0 auto 60px auto;
+.img-conservacao {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border: 5px solid #52b788;
 }
 
-.conservacao-flex {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+.FacaSuaParte {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9f1c;
 }
 
-.conservacao-flex img {
-    width: 45%;
-    min-width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.conservacao-texto {
-    flex: 1;
-    min-width: 300px;
-}
-
-.conservacao-texto h3 {
-    font-size: 22px;
-    color: #1a1a1a;
-    margin-bottom: 15px;
-}
-
-.conservacao-texto p {
-    font-size: 15px;
-    color: #666666;
-}
-
-/* RODAPÉ DISCRETO */
+/* RODAPÉ */
 footer {
-    background-color: #ffffff;
-    color: #999999;
+    background-color: #112a1f;
+    color: #999;
     text-align: center;
-    padding: 40px 20px;
-    font-size: 13px;
-    border-top: 1px solid #f0f0f0;
-}
+    padding: 20px;
+    font-size: 14px;
 }
